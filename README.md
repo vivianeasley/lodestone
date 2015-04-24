@@ -1,5 +1,9 @@
 # README #
 
+### Demo ###
+
+* http://robertpage.github.io/lodestone/
+
 ### Basic Info ###
 
 * A view framework I built to learn about javascript
