@@ -1,0 +1,8 @@
+APP.toolsModule = (function ( ) {
+
+    return {
+    };
+
+})( );
+
+

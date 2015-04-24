@@ -1,0 +1,80 @@
+/*Rounded Corners*/
+
+.Border-Radius ( @radius ) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+/*Background Image*/
+.background-image-center (@repeat: no-repeat, @position: center) {
+  background-repeat: @repeat;
+  background-position: @position;
+}
+
+.User-Select ( @value ) {
+  -webkit-user-select: @value;  /* Chrome all / Safari all */
+  -moz-user-select: @value;     /* Firefox all */
+  -ms-user-select: @value;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: @value;
+  user-select: @value;
+
+}
+
+.Transform-Rotate ( @deg )  {
+  -ms-transform     : rotate( @deg ) ; /* IE 9 */
+  -moz-transform    : rotate( @deg ) ; /* Gecko */
+  -webkit-transform : rotate( @deg ) ; /* Chrome, Safari, Opera */
+  transform         : rotate( @deg ) ; /* Standard syntax */
+}
+
+.Transform-Origin ( @x, @y ) {
+  transform-origin: @x @y;
+  -moz-transform-origin: @x @y;
+  -webkit-transform-origin:  @x @y;
+}
+
+.Transition ( @styles : all,  @duration : 0.3s , @ease : ease-in-out ) {
+  -webkit-transition: @styles @duration @ease;
+  -moz-transition: @styles @duration @ease;
+  -o-transition: @styles @duration @ease;
+  transition : @styles @duration @ease ;
+}
+
+.Scroll-auto-y {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Scroll-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Box-Sizing ( @sizing ) {
+  -webkit-box-sizing: @sizing; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: @sizing;    /* Firefox, other Gecko */
+  box-sizing: @sizing;
+}
+
+/**
+ * TRANSFORM MIXINS
+ */
+
+ .Transform-tranlate-z ( @x, @y, @z ) {
+      -ms-transform: translate(@x,@y);
+  -webkit-transform: translate(@x,@y) translateZ(@z);
+     -moz-transform: translate(@x,@y) translateZ(@z);
+       -o-transform: translate(@x,@y) translateZ(@z);
+          transform: translate(@x,@y) translateZ(@z);
+ }
+
+ .Transform-tranlate ( @x, @y ) {
+      -ms-transform: translate(@x,@y);
+  -webkit-transform: translate(@x,@y);
+     -moz-transform: translate(@x,@y);
+       -o-transform: translate(@x,@y);
+          transform: translate(@x,@y);
+ }
