@@ -8,10 +8,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "broccoli": "^0.12.3",
-    "broccoli-concat": "0.0.11",
-    "broccoli-less-single": "^0.2.0",
-    "broccoli-merge-trees": "^0.1.4",
-    "broccoli-static-compiler": "^0.1.4",
+    "broccoli": "*",
+    "broccoli-concat": "*",
+    "broccoli-less-single": "*",
+    "broccoli-merge-trees": "*",
+    "broccoli-static-compiler": "*"
   }
 }

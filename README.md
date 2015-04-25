@@ -18,7 +18,11 @@
 ### How do I get set up? ###
 
 * Download broccoli: npm install --global broccoli-cli
-* Add broccoli modules: concat, less-single, merge-trees, and static-compiler.
+* Add broccoli modules: 
+* npm install --save-dev broccoli-concat
+* npm install --save-dev broccoli-less-single
+* npm install --save-dev broccoli-static-compiler
+* npm install --save-dev broccoli-broccoli-merge-trees
 * Download and add routie.min.js to the libraries folder.
 * Build and start the server: broccoli serve
 * Profit
