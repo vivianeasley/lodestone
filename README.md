@@ -2,7 +2,7 @@
 
 ### Demo ###
 
-* http://robertpage.github.io/lodestone/
+* http://vivianeasley.github.io/lodestone/
 
 ### Basic Info ###
 
